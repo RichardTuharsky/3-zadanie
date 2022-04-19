@@ -51,3 +51,36 @@ body {
     margin-bottom: 10px;
     position: relative;
 }
+.form input {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    font-family: inherit;
+    width: 100%;
+    padding: 12px;
+    display: block;
+    font-size: 14px;
+}
+
+.form i {
+    position: absolute;
+    top: 32px;
+    right: 10px;
+
+}
+
+.form small {
+    position: absolute;
+    bottom: 0;
+    left: 5px;
+}
+button {
+    width: 100%;
+    font-family: inherit;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 7px;
+    box-shadow: 5px 15px rgba(0,0,0,1.0);
+    cursor: white;
+    outline: none;
+}
+
