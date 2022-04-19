@@ -14,5 +14,40 @@ body {
     opacity: 0.98;
     height: 100vh;
     margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Ubuntu",sans-serif;
 
+}
+
+.containter {
+    background-color: white;
+    border-radius: 7px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    width: 437px;
+    max-width: 100%;
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+    background-color: #c7bfbf;
+
+}
+
+.header h2 {
+    margin: 0;
+    font-size: 30px;
+}
+
+.main-form {
+    padding: 30px 40px;
+}
+
+.form {
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    position: relative;
 }
