@@ -9,6 +9,10 @@ function myfun() {
     const error=document.getElementsByClassName('error');
 
 
+    let m=0;
+	let e=0;
+	let p1=0;
+	let p2=0;
 
     /*validacia pre meno*/
     if(meno.value==""){
@@ -18,7 +22,7 @@ function myfun() {
         message[0].innerText="Meno nemôže byť prázdne";
         error[0].style.visibility = 'visible';
         error[0].style.color='red';
-        u=0;
+        m=0;
     }
     else if(meno.value.length<3&&meno.value.length>0){
         meno.style.borderColor = 'red';
@@ -27,7 +31,7 @@ function myfun() {
         message[0].innerText="Meno musí obsahovať aspon 3 písmená";
         error[0].style.visibility = 'visible';
         error[0].style.color='red';
-        u=0;
+        m=0;
     }
     else if(meno.value.length>3&&(isNaN(parseFloat(meno.value)))){
         meno.style.borderColor = 'green';
@@ -35,7 +39,7 @@ function myfun() {
         message[0].style.visibility = 'hidden';
         sucess[0].style.visibility = 'visible';
         sucess[0].style.color='green';
-        u=1;
+        m=1;
     }
     else{
         meno.style.borderColor = 'red';
@@ -44,78 +48,78 @@ function myfun() {
         message[0].innerText="Čísla niesu povolené v mene";
         error[0].style.visibility = 'visible';
         error[0].style.color='red';
-        u=0;
+        m=0;
     }
     
     /* validacia pre priezvisko*/
     if(priezvisko.value==""){
         priezvisko.style.borderColor = 'red';
-        message[0].style.visibility = 'visible';
-        message[0].style.color='red';
-        message[0].innerText="Priezvisko nemôže byť prázdne";
-        error[0].style.visibility = 'visible';
-        error[0].style.color='red';
-        u=0;
+        message[1].style.visibility = 'visible';
+        message[1].style.color='red';
+        message[1].innerText="Priezvisko nemôže byť prázdne";
+        error[1].style.visibility = 'visible';
+        error[1].style.color='red';
+        p=0;
     }
     else if(priezvisko.value.length<3&&priezvisko.value.length>0){
         priezvisko.style.borderColor = 'red';
-        message[0].style.visibility = 'visible';
-        message[0].style.color='red';
-        message[0].innerText="Priezvisko musí obsahovať aspon 3 písmená";
-        error[0].style.visibility = 'visible';
-        error[0].style.color='red';
-        u=0;
+        message[1].style.visibility = 'visible';
+        message[1].style.color='red';
+        message[1].innerText="Priezvisko musí obsahovať aspon 3 písmená";
+        error[1].style.visibility = 'visible';
+        error[1].style.color='red';
+        p=0;
     }
     else if(priezvisko.value.length>3&&(isNaN(parseFloat(priezvisko.value)))){
         priezvisko.style.borderColor = 'green';
-        error[0].style.visibility = 'hidden';
-        message[0].style.visibility = 'hidden';
-        sucess[0].style.visibility = 'visible';
-        sucess[0].style.color='green';
-        u=1;
-
-
-    }
-    else{
-        priezvisko.style.borderColor = 'red';
-        message[0].style.visibility = 'visible';
-        message[0].style.color='red';
-        message[0].innerText="Čísla niesu povolené v priezvisku";
-        error[0].style.visibility = 'visible';
-        error[0].style.color='red';
-        u=0;
-
-    }
-    
-    /*validacia pre email*/
-    if(email.value==""){
-        email.style.borderColor = 'red';
-        message[1].style.visibility = 'visible';
-        message[1].style.color='red';
-        message[1].innerText="Email nemôže byť prázdny";
-        error[1].style.visibility = 'visible';
-        error[1].style.color='red';
-        e=0;
-    }
-    else if(email.value.indexOf('@')<3||email.value.lastIndexOf('.')>=email.value.length-2){
-        email.style.borderColor = 'red';
-        message[1].style.visibility = 'visible';
-        message[1].style.color='red';
-        message[1].innerText="Invalid email";
-        error[1].style.visibility = 'visible';
-        error[1].style.color='red';
-        e=0;
-    }
-    else{
-        email.style.borderColor = 'green';
         error[1].style.visibility = 'hidden';
         message[1].style.visibility = 'hidden';
         sucess[1].style.visibility = 'visible';
         sucess[1].style.color='green';
+        p=1;
+
+
+    }
+    else{
+        priezvisko.style.borderColor = 'red';
+        message[1].style.visibility = 'visible';
+        message[1].style.color='red';
+        message[1].innerText="Čísla niesu povolené v priezvisku";
+        error[1].style.visibility = 'visible';
+        error[1].style.color='red';
+        p=0;
+
+    }
+    
+    /*validacia pre email
+    if(email.value==""){
+        email.style.borderColor = 'red';
+        message[2].style.visibility = 'visible';
+        message[2].style.color='red';
+        message[2].innerText="Email nemôže byť prázdny";
+        error[2].style.visibility = 'visible';
+        error[2].style.color='red';
+        e=0;
+    }
+    else if(email.value.indexOf('@')<3||email.value.lastIndexOf('.')>=email.value.length-2){
+        email.style.borderColor = 'red';
+        message[2].style.visibility = 'visible';
+        message[2].style.color='red';
+        message[2].innerText="Invalid email";
+        error[2].style.visibility = 'visible';
+        error[2].style.color='red';
+        e=0;
+    }
+    else{
+        email.style.borderColor = 'green';
+        error[2].style.visibility = 'hidden';
+        message[2].style.visibility = 'hidden';
+        sucess[2].style.visibility = 'visible';
+        sucess[2].style.color='green';
         e=1;
     }
     
-    
+    */
 
     return false;
 }
