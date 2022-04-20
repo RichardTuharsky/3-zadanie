@@ -9,39 +9,43 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="containter">
-        <div class="header">
-            <h2>Registračný formulár</h2>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h2>Registračný formulár</h2>
             </div>
-            <form action="backend" class="main-form">
-                <div class="form">
-                    <label for="">Meno</label>
-                    <input type="text" placeholder="Zadajte meno" id="meno" autocomplete="off">
-                    <small class="message">error message</small>
-                </div>
-                <div class="form">
-                    <label for="">Priezvisko</label>
-                    <input type="text" placeholder="Zadajte priezvisko" id="priezvisko" autocomplete="off">
-                    <small class="message">error message</small>
-                </div>
-                <div class="form">
-                    <label for="">Email</label>
-                    <input type="text" placeholder="Zadajte email" id="email" autocomplete="off">
-                    <small class="message">error message</small>
-                </div>
-                <div class="form">
-                    <label for="">Heslo</label>
-                    <input type="text" placeholder="Zadajte heslo" id="heslo1" autocomplete="off">
-                    <small class="message">error message</small>
-                </div>
-                <div class="form">
-                    <label for="">Zopakujte heslo</label>
-                    <input type="text" placeholder="zopakujte heslo" id="heslo2" autocomplete="off">
-                    <small class="message">error message</small>
-                </div>
-                <button>Potvrdit registraciu</button>
-            </form>
+                <form action="backend.php" class="main-form" onsubmit="return myfun()">
+                    <div class="form">
+                        <label for="">Meno</label>
+                        <input type="text" placeholder="Zadajte meno" id="meno" autocomplete="off">
+                        <small class="message">error message</small>
+                    </div>
+                    <div class="form">
+                        <label for="">Priezvisko</label>
+                        <input type="text" placeholder="Zadajte priezvisko" id="priezvisko" autocomplete="off">
+                        <small class="message">error message</small>
+                    </div>
+                    <div class="form">
+                        <label for="">Email</label>
+                        <input type="email" placeholder="Zadajte email" id="email" autocomplete="off">
+                        <small class="message">error message</small>
+                    </div>
+                    <div class="form">
+                        <label for="">Heslo</label>
+                        <input type="password" placeholder="Zadajte heslo" id="password1" autocomplete="off">
+                        <i class="fas sucess">&#xf058;</i>
+                        <i class="fas error">&#xf06a;</i>
+                        <small class="message">error message</small>
+                    </div>
+                    <div class="form">
+                        <label for="">Potvrdenie hesla</label>
+                        <input type="password" placeholder="Zopakujte heslo" id="password2" autocomplete="off">
+                        <i class="fas sucess">&#xf058;</i>
+                        <i class="fas error">&#xf06a;</i>
+                        <small class="message">error message</small>
+                    </div>
+                    <button>Potvrdiť registráciu</button>
+                </form>
         </div>
-    </div>
 </body>
 </html>
