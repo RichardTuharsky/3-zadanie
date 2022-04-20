@@ -91,7 +91,7 @@ function myfun() {
 
     }
     
-    /*validacia pre email
+    /*validacia pre email */
     if(email.value==""){
         email.style.borderColor = 'red';
         message[2].style.visibility = 'visible';
@@ -119,7 +119,46 @@ function myfun() {
         e=1;
     }
     
-    */
+    
+   /*validacia pre heslo 1
+    var numbers=/[0-9]/g;
+    if (heslo1.value==""){
+        heslo1.style.borderColor = 'red';
+        message[3].style.visibility = 'visible';
+        message[3].style.color='red';
+        message[3].innerText="Password cannot be blank";
+        error[3].style.visibility = 'visible';
+        error[3].style.color='red';
+        p1=0;
+    }
+    else if(heslo1.value.length<9){
+        heslo1.style.borderColor = 'red';
+        message[3].style.visibility = 'visible';
+        message[3].style.color='red';
+        message[3].innerText="Password must be minimum 8 character";
+        error[3].style.visibility = 'visible';
+        error[3].style.color='red';
+        p1=0;
+    }
+
+    else if(!(heslo1.value.match(numbers))){
+        heslo1.style.borderColor = 'red';
+        message[3].style.visibility = 'visible';
+        message[3].style.color='red';
+        message[3].innerText="Password have atleast a number";
+        error[3].style.visibility = 'visible';
+        error[3].style.color='red';
+        p1=0;
+    }
+
+    else{
+        heslo1.style.borderColor = 'green';
+        error[3].style.visibility = 'hidden';
+        message[3].style.visibility = 'hidden';
+        sucess[3].style.visibility = 'visible';
+        sucess[3].style.color='green';
+        p1=1;
+    } */
 
     return false;
 }
