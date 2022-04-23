@@ -91,33 +91,6 @@ function myfun() {
 
     }
     
-    /*validacia pre email */
-    if(email.value==""){
-        email.style.borderColor = 'red';
-        message[2].style.visibility = 'visible';
-        message[2].style.color='red';
-        message[2].innerText="Email nemôže byť prázdny";
-        error[2].style.visibility = 'visible';
-        error[2].style.color='red';
-        e=0;
-    }
-    else if(email.value.indexOf('@')<3||email.value.lastIndexOf('.')>=email.value.length-2){
-        email.style.borderColor = 'red';
-        message[2].style.visibility = 'visible';
-        message[2].style.color='red';
-        message[2].innerText="Invalid email";
-        error[2].style.visibility = 'visible';
-        error[2].style.color='red';
-        e=0;
-    }
-    else{
-        email.style.borderColor = 'green';
-        error[2].style.visibility = 'hidden';
-        message[2].style.visibility = 'hidden';
-        sucess[2].style.visibility = 'visible';
-        sucess[2].style.color='green';
-        e=1;
-    }
     
     
    /*validacia pre heslo 1
