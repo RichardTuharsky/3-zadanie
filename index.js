@@ -10,9 +10,9 @@ function myfun() {
 
 
     let m=0;
-	let e=0;
-	let p1=0;
-	let p2=0;
+    let p=0;
+	let h1=0;
+	let h2=0;
 
     /*validacia pre meno*/
     if(meno.value==""){
@@ -94,44 +94,44 @@ function myfun() {
     
     
    /*validacia pre heslo 1
-    var numbers=/[0-9]/g;
-    if (heslo1.value==""){
-        heslo1.style.borderColor = 'red';
-        message[3].style.visibility = 'visible';
-        message[3].style.color='red';
-        message[3].innerText="Password cannot be blank";
-        error[3].style.visibility = 'visible';
-        error[3].style.color='red';
-        p1=0;
-    }
-    else if(heslo1.value.length<9){
-        heslo1.style.borderColor = 'red';
-        message[3].style.visibility = 'visible';
-        message[3].style.color='red';
-        message[3].innerText="Password must be minimum 8 character";
-        error[3].style.visibility = 'visible';
-        error[3].style.color='red';
-        p1=0;
-    }
-
-    else if(!(heslo1.value.match(numbers))){
-        heslo1.style.borderColor = 'red';
-        message[3].style.visibility = 'visible';
-        message[3].style.color='red';
-        message[3].innerText="Password have atleast a number";
-        error[3].style.visibility = 'visible';
-        error[3].style.color='red';
-        p1=0;
-    }
-
-    else{
-        heslo1.style.borderColor = 'green';
-        error[3].style.visibility = 'hidden';
-        message[3].style.visibility = 'hidden';
-        sucess[3].style.visibility = 'visible';
-        sucess[3].style.color='green';
-        p1=1;
-    } */
-
+   var numbers=/[0-9]/g;
+   if (heslo1.value==""){
+       heslo1.style.borderColor = 'red';
+       message[2].style.visibility = 'visible';
+       message[2].style.color='red';
+       message[2].innerText="Password cannot be blank";
+       error[2].style.visibility = 'visible';
+       error[2].style.color='red';
+       h1=0;
+   }
+   else if(heslo1.value.length<9){
+       heslo1.style.borderColor = 'red';
+       message[2].style.visibility = 'visible';
+       message[2].style.color='red';
+       message[2].innerText="Password must be minimum 8 character";
+       error[2].style.visibility = 'visible';
+       error[2].style.color='red';
+       h1=0;
+   }
+   else if(!(heslo1.value.match(numbers))){
+       heslo1.style.borderColor = 'red';
+       message[2].style.visibility = 'visible';
+       message[2].style.color='red';
+       message[2].innerText="Password have atleast a number";
+       error[2].style.visibility = 'visible';
+       error[2].style.color='red';
+       h1=0;
+   }
+   else{
+       heslo1.style.borderColor = 'green';
+       error[2].style.visibility = 'hidden';
+       message[2].style.visibility = 'hidden';
+       sucess[2].style.visibility = 'visible';
+       sucess[2].style.color='green';
+       h1=1;
+   }*/
+   
+  
+  
     return false;
 }
